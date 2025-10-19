@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Website</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h1>EcoMart</h1>
+    </div>
+    <div class="header-center">
+      <nav id="category-bar">
+      
+      </nav>
+    </div>
+    <div class="header-right">
+      <a href="cart.html" class="cart-link">
+        <i class="fa fa-shopping-cart"></i>
+        <span id="cart-count"></span>
+      </a>
+    </div>
+  </header>
+  <main class="main-flex">
+    <aside id="filters-sidebar">
+      <div class="filter-section">
+        <h3><i class="fa fa-search"></i> Search</h3>
+        <input type="text" id="search-term" placeholder="Product name">
+      </div>
+      <div class="filter-section">
+        <h3><i class="fa fa-list"></i> Category</h3>
+        <div id="category-checkboxes">
+          
+        </div>
+      </div>
+      <div class="filter-section">
+        <h3><i class="fa fa-dollar-sign"></i> Price</h3>
+        <label for="price-min">Min:</label>
+        <input type="number" id="price-min" min="0" value="0">
+        <label for="price-max">Max:</label>
+        <input type="number" id="price-max" min="0" value="1000">
+      </div>
+      <div class="filter-section">
+        <h3><i class="fa fa-star"></i> Rating</h3>
+        <div id="rating-stars">
+         
+        </div>
+      </div>
+      <div class="filter-section">
+        <button id="apply-filters">Apply Filters</button>
+        <button id="reset-filters" style="margin-top:0.5rem;background:#eee;color:#1976d2;">Reset</button>
+      </div>
+    </aside>
+    <section id="product-grid">
+     
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html> 
